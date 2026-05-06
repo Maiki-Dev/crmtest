@@ -8,7 +8,7 @@ export default async function DashboardPage() {
   const { data: { user } } = await supabase.auth.getUser();
 
   if (!user) {
-    return <div>Нэвтрээгүй байна.</div>;
+    return <div>Нэвтрээгүй байна</div>;
   }
 
   const { data: business, error: businessError } = await supabase
